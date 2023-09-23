@@ -12,14 +12,13 @@ export const Main = () => {
                     <Name>I am Pavel Volodko</Name>
                     <MainTitle>A Web Developer.</MainTitle>
                 </div>
-
                 <Photo src={photo} alt=""/>
             </FlexWrapper>
         </SlyledMain>
     );
 };
 
-const SlyledMain = styled.div`
+const SlyledMain = styled.section`
   min-height: 100vh;
   background-color: #ceca9f;
 `
