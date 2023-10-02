@@ -43,6 +43,7 @@ const Name = styled.h2`
   span {
     position: relative;
     z-index: 0;
+    white-space: nowrap;
 
     &::before {
       content: "";
@@ -66,6 +67,7 @@ const Photo = styled.img`
   width: 350px;
   height: 430px;
   object-fit: cover;
+  margin-right: 20px;
 
   @media ${theme.media.mobile} {
     width: 310px;
@@ -80,6 +82,7 @@ const SmallText = styled.h2`
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
+  margin-top: 65px;
 
   &::before {
     content: "";
@@ -94,6 +97,8 @@ const PhotoWrapper = styled.div`
     @media ${theme.media.mobile} {
       width: 314px;
       height: 414px;
+      top: -17px;
+      left: 20px;
     }
   }
 `

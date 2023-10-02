@@ -20,7 +20,6 @@ export const Header = () => {
                     <HeaderMenu menuItems={items}/>
                     <MobileMenu menuItems={items}/>
                 </FlexWrapper>
-
             </Container>
         </StyleHeader>
     );
