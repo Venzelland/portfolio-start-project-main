@@ -22,7 +22,7 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
-
+padding: ;
 `
 
 const StyledForm = styled.form`

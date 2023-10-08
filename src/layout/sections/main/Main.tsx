@@ -16,27 +16,27 @@ export const Main = () => {
                         <Name>I am <span>Pavel Volodko</span></Name>
                         <MainTitle>A Web Developer.</MainTitle>
                     </div>
-
                     <PhotoWrapper>
                         <Photo src={photo} alt=""/>
                     </PhotoWrapper>
                 </FlexWrapper>
             </Container>
-
         </SlyledMain>
     );
 };
 
 const SlyledMain = styled.section`
-
+  padding-top: 295px;
+  padding-bottom: 295px;
+  
 `
 
 const MainTitle = styled.h1`
-  ${font({weight: 400, Fmax: 27, Fmin: 20,   })}
+  ${font({weight: 400, Fmax: 27, Fmin: 20,})}
 `
 
 const Name = styled.h2`
-  ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36,   })}
+  ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36,})}
   letter-spacing: 0.05em;
   margin: 10px 0;
 
@@ -57,9 +57,9 @@ const Name = styled.h2`
       z-index: -1;
     }
   }
-  
+
   @media ${theme.media.mobile} {
-    margin: 15px 0 22px;    
+    margin: 15px 0 22px;
   }
 `
 
@@ -76,13 +76,13 @@ const Photo = styled.img`
 `
 
 const SmallText = styled.h2`
-  ${font({weight: 400, Fmax: 27, Fmin: 14 })}
+  ${font({weight: 400, Fmax: 14, Fmin: 14})}
 `
 
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
-  margin-top: 65px;
+
 
   &::before {
     content: "";
@@ -100,6 +100,10 @@ const PhotoWrapper = styled.div`
       top: -17px;
       left: 20px;
     }
+  }
+
+  @media ${theme.media.mobile} {
+    margin-top: 65px;
   }
 `
 

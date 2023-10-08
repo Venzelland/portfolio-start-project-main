@@ -26,6 +26,7 @@ export const Header = () => {
 };
 
 const StyleHeader = styled.header`
+  max-height: 100px;
   background-color: rgba(31, 31, 32, 0.90);;
   padding: 20px 0;
   position: fixed;
