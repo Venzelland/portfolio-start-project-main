@@ -7,7 +7,7 @@ import {Skills} from "./layout/sections/skills/Skills";
 import {Works} from "./layout/sections/works/Works";
 import {Footer} from "./layout/footer/Footer";
 import {Testimony} from "./layout/sections/testimony/Testimony";
-import {Contact} from "./layout/sections/contact/Contact";
+import {Contact} from "./layout/sections/contacts/Contact";
 import {Slogan} from "./layout/sections/slogan/Slogan";
 
 
