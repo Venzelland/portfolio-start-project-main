@@ -9,11 +9,14 @@ import {Footer} from "./layout/footer/Footer";
 import {Testimony} from "./layout/sections/testimony/Testimony";
 import {Contact} from "./layout/sections/contacts/Contact";
 import {Slogan} from "./layout/sections/slogan/Slogan";
+import {Particle} from "./components/particle/Particle";
+import {GoTopBtn} from "./components/goTopBtn/GoTopBtn";
 
 
 function App() {
     return (
         <div className="App">
+            <Particle/>
             <Header/>
             <Main/>
             <Skills/>
@@ -22,6 +25,7 @@ function App() {
             <Contact/>
             <Slogan/>
             <Footer/>
+            <GoTopBtn/>
         </div>
     );
 }

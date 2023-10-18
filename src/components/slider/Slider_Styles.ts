@@ -2,11 +2,12 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
 const Slider = styled.div`
-
   max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid red;
 `
 
 const Slide = styled.div`
@@ -25,7 +26,7 @@ const Name = styled.span`
   text-transform: uppercase;
   margin: 22px 0 42px;
   display: inline-block;
-  
+
 `
 
 const Pagination = styled.div`
@@ -36,11 +37,11 @@ const Pagination = styled.div`
     margin: 5px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    
+
     & + span {
       margin-left: 5px;
     }
-    
+
     &.active {
       background-color: ${theme.colors.accent};
       width: 20px;

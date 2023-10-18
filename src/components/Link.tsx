@@ -1,7 +1,7 @@
 import {theme} from "../styles/Theme";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
-export const Link = styled.a`
+export const Link = styled.a<{ active?: boolean }>`
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -9,9 +9,9 @@ export const Link = styled.a`
   padding: 10px;
   position: relative;
   z-index: 0;
-  
+
   &:hover {
-    &::before{
+    &::before {
       height: 10px;
     }
   }
@@ -20,13 +20,18 @@ export const Link = styled.a`
     content: "";
     display: inline-block;
     background-color: ${theme.colors.accent};
-    //height: 10px;
-    z-index: -1;
-    
 
     position: absolute;
     bottom: 5px;
     left: 0;
     right: 0;
+    z-index: -1;
+    height: 0;
+    transition: ${theme.animations.transition};
+    
+
+    ${props => props.active && css<{ active?: boolean }>`
+      height: 10px;
+    `}
   }
 `

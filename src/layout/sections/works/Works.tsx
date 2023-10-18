@@ -11,7 +11,7 @@ import {S} from './Works_Styles'
 
 // const tabsItems = ["All", "Landing page", "React", "spa"]
 
-const tabsItems: Array<{title: string, status: TabsStatusType}>  = [
+const tabsItems: Array<{ title: string, status: TabsStatusType }> = [
     {
         title: "All",
         status: "all"
@@ -48,7 +48,7 @@ const workData = [
 ]
 
 export const Works: React.FC = () => {
-    const [currentFilterStatus, setCurrentFilterStatus, ] = useState("all")
+    const [currentFilterStatus, setCurrentFilterStatus,] = useState("all")
     let filteredWorks = workData
 
     if (currentFilterStatus === "landing") {
@@ -61,16 +61,18 @@ export const Works: React.FC = () => {
         filteredWorks = workData.filter(work => work.type === "spa")
     }
 
-    function changeFilterStatus (value: TabsStatusType ) {
+    function changeFilterStatus(value: TabsStatusType) {
         setCurrentFilterStatus(value)
     }
 
 
     return (
-        <S.Works>
+        <S.Works id={"works"}>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
-                <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}/>
+                <TabMenu tabsItems={tabsItems}
+                         changeFilterStatus={changeFilterStatus}
+                         currentFilterStatus={currentFilterStatus}/>
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
                     {filteredWorks.map((w) => {
                         return <Work

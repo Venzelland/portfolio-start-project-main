@@ -3,6 +3,7 @@ import {theme} from "../../../styles/Theme";
 
 const Skills = styled.section`
   padding: 97px 0;
+  position: relative;
 `
 
 const Skill = styled.div`

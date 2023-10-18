@@ -28,7 +28,7 @@ export const Button = styled.button`
     display: inline-block;
     height: 10px;
     width: 50%;
-    
+    transition: ${theme.animations.transition};
     position: absolute;
     bottom: 0;
     left: 50%;
