@@ -66,7 +66,7 @@ const NavLink = styled(Link)`
       color: ${theme.colors.font};
 
       & + ${Mask} {
-        transform: skewX(12deg) translateX(-5px);
+        transform: skewX(12deg) translateX(0);
       }
     }
   }
